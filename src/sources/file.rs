@@ -26,6 +26,7 @@ pub struct FileConfig {
     pub data_dir: Option<PathBuf>,
     pub glob_minimum_cooldown: u64, // millis
     pub fingerprinting: FingerprintingConfig,
+    pub max_read_bytes: usize,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug, PartialEq)]
@@ -74,6 +75,7 @@ impl Default for FileConfig {
             host_key: None,
             data_dir: None,
             glob_minimum_cooldown: 1000, // millis
+            max_read_bytes: 2048,
         }
     }
 }
@@ -148,7 +150,7 @@ pub fn file_source(
     let file_server = FileServer {
         include: config.include.clone(),
         exclude: config.exclude.clone(),
-        max_read_bytes: 2048,
+        max_read_bytes: config.max_read_bytes,
         start_at_beginning: config.start_at_beginning,
         ignore_before,
         max_line_bytes: config.max_line_bytes,
