@@ -1525,6 +1525,33 @@ null = false
 description = "Your Splunk HEC token."
 
 # ------------------------------------------------------------------------------
+# sinks.statsd
+# ------------------------------------------------------------------------------
+[sinks.statsd]
+batch_size = 1432
+batch_timeout = 1
+beta = true
+buffer = false
+delivery_guarantee = "best_effort"
+egress_method = "streaming"
+healthcheck = false
+input_types = ["metric"]
+write_to_description = "[StatsD][url.statsd] metrics service"
+
+[sinks.statsd.options.address]
+type = "string"
+examples = ["127.0.0.1:8125"]
+null = true
+default = "127.0.0.1:8125"
+description = "The UDP socket address to send stats to."
+
+[sinks.statsd.options.namespace]
+type = "string"
+examples = ["service"]
+null = false
+description = "A prefix that will be added to all metric names."
+
+# ------------------------------------------------------------------------------
 # sinks.tcp
 # ------------------------------------------------------------------------------
 [sinks.tcp]
@@ -1755,6 +1782,8 @@ rust_target_triples  = "https://forge.rust-lang.org/platform-support.html"
 splunk_hec = "http://dev.splunk.com/view/event-collector/SP-CAAAE6M"
 splunk_hec_setup = "https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector"
 standard_streams = "https://en.wikipedia.org/wiki/Standard_streams"
+statsd = "https://github.com/statsd/statsd"
+statsd_multi = "https://github.com/statsd/statsd/blob/master/docs/metric_types.md#multi-metric-packets"
 statsd_set = "https://github.com/statsd/statsd/blob/master/docs/metric_types.md#sets"
 strftime_specifiers = "https://docs.rs/chrono/0.3.1/chrono/format/strftime/index.html"
 syslog_5424 = "https://tools.ietf.org/html/rfc5424"

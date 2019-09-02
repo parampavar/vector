@@ -154,6 +154,7 @@ Or view [platform specific installation instructions][docs.installation].
 | [**`kafka`**][docs.kafka_sink] | [Streams](#streaming) [`log`][docs.log_event] events to [Apache Kafka][url.kafka] via the [Kafka protocol][url.kafka_protocol]. |
 | [**`prometheus`**][docs.prometheus_sink] | [Exposes](#exposing-and-scraping) [`metric`][docs.metric_event] events to [Prometheus][url.prometheus] metrics service. |
 | [**`splunk_hec`**][docs.splunk_hec_sink] | [Batches](#buffers-and-batches) [`log`][docs.log_event] events to a [Splunk HTTP Event Collector][url.splunk_hec]. |
+| [**`statsd`**][docs.statsd_sink] | [Streams](#streaming) [`metric`][docs.metric_event] events to [StatsD][url.statsd] metrics service. |
 | [**`tcp`**][docs.tcp_sink] | [Streams](#streaming) [`log`][docs.log_event] events to a TCP connection. |
 | [**`vector`**][docs.vector_sink] | [Streams](#streaming) [`log`][docs.log_event] events to another downstream Vector instance. |
 
@@ -240,6 +241,7 @@ the License.
 [docs.sources]: https://docs.vector.dev/usage/configuration/sources
 [docs.splunk_hec_sink]: https://docs.vector.dev/usage/configuration/sinks/splunk_hec
 [docs.starting]: https://docs.vector.dev/usage/administration/starting
+[docs.statsd_sink]: https://docs.vector.dev/usage/configuration/sinks/statsd
 [docs.statsd_source]: https://docs.vector.dev/usage/configuration/sources/statsd
 [docs.stdin_source]: https://docs.vector.dev/usage/configuration/sources/stdin
 [docs.stopping]: https://docs.vector.dev/usage/administration/stopping
@@ -276,6 +278,7 @@ the License.
 [url.roadmap]: https://github.com/timberio/vector/milestones?direction=asc&sort=title&state=open
 [url.rust]: https://www.rust-lang.org/
 [url.splunk_hec]: http://dev.splunk.com/view/event-collector/SP-CAAAE6M
+[url.statsd]: https://github.com/statsd/statsd
 [url.test_harness]: https://github.com/timberio/vector-test-harness/
 [url.vector_chat]: https://chat.vector.dev
 [url.vote_feature]: https://github.com/timberio/vector/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3A%22Type%3A+New+Feature%22

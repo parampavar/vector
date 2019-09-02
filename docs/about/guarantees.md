@@ -46,6 +46,7 @@ and [source][docs.sources].
 | [`kafka` sink][docs.kafka_sink] | `at_least_once` |
 | [`prometheus` sink][docs.prometheus_sink] | `best_effort` |
 | [`splunk_hec` sink][docs.splunk_hec_sink] | `at_least_once` |
+| [`statsd` sink][docs.statsd_sink] | `best_effort` |
 | [`tcp` sink][docs.tcp_sink] | `best_effort` |
 | [`vector` sink][docs.vector_sink] | `best_effort` |
 
@@ -127,6 +128,7 @@ keep you in the loop if this ever changes.
 [docs.sinks]: ../usage/configuration/sinks
 [docs.sources]: ../usage/configuration/sources
 [docs.splunk_hec_sink]: ../usage/configuration/sinks/splunk_hec.md
+[docs.statsd_sink]: ../usage/configuration/sinks/statsd.md
 [docs.statsd_source]: ../usage/configuration/sources/statsd.md
 [docs.stdin_source]: ../usage/configuration/sources/stdin.md
 [docs.syslog_source]: ../usage/configuration/sources/syslog.md

@@ -46,6 +46,7 @@ scopes:
   - kafka sink
   - prometheus sink
   - splunk_hec sink
+  - statsd sink
   - tcp sink
   - vector sink
 
