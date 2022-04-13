@@ -240,9 +240,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql"
-version = "3.0.37"
+version = "3.0.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1fff26a58e85256388bc67a2c6373d9876978f11d912051e8a2b1caf6bb46ff6"
+checksum = "2106123e9c79a8d649bf0f7e9f58462a90ce2ca71ad9a0b69b4f2b67382c376f"
 dependencies = [
  "async-graphql-derive",
  "async-graphql-parser",
@@ -271,9 +271,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-derive"
-version = "3.0.37"
+version = "3.0.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "447958447d3ed56f4f01618b240cae4d47f04bffd81b576bf3942a06e573f017"
+checksum = "1a6ec150ac445a660169a3ad5075b953a7351ec75fe28095e639f6282aac9fdb"
 dependencies = [
  "Inflector",
  "async-graphql-parser",
@@ -287,9 +287,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-parser"
-version = "3.0.37"
+version = "3.0.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9b6852c0e92b7fad08753d5fb23e6528db21c088d4423f85669c8ced7c5ec6e1"
+checksum = "0302764f05e0e50fd3b381646d4a0ed07d4ce5c9fc1eaf79bbd7745bd4893adb"
 dependencies = [
  "async-graphql-value",
  "pest",
@@ -300,9 +300,9 @@ dependencies = [
 
 [[package]]
 name = "async-graphql-value"
-version = "3.0.37"
+version = "3.0.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e094427865a6fe74867767a9d48423ee079bd660cb3013031ff74f815dc97690"
+checksum = "ba2e19876bcd2068f597fd0182f4ba602ce3c89cb04c4b8810d7c36f44724e92"
 dependencies = [
  "bytes 1.1.0",
  "indexmap",
@@ -2147,12 +2147,12 @@ dependencies = [
  "bytes 1.1.0",
  "chrono",
  "chrono-tz",
+ "criterion",
  "itertools",
  "lalrpop",
  "lalrpop-util",
  "lookup",
  "nom 7.1.1",
- "nom-regex",
  "once_cell",
  "onig",
  "ordered-float",
@@ -2480,9 +2480,9 @@ dependencies = [
 
 [[package]]
 name = "enumflags2"
-version = "0.7.4"
+version = "0.7.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1b3ab37dc79652c9d85f1f7b6070d77d321d2467f5fe7b00d6b7a86c57b092ae"
+checksum = "e75d4cd21b95383444831539909fbb14b9dc3fdceb2a6f5d36577329a1f55ccb"
 dependencies = [
  "enumflags2_derive",
 ]
@@ -4111,9 +4111,9 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.122"
+version = "0.2.123"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ec647867e2bf0772e28c8bcde4f0d19a9216916e890543b5a03ed8ef27b8f259"
+checksum = "cb691a747a7ab48abc15c5b42066eaafde10dc427e3b6ee2a1cf43db04c763bd"
 
 [[package]]
 name = "libflate"
@@ -4974,16 +4974,6 @@ checksum = "a8903e5a29a317527874d0402f867152a3d21c908bb0b933e416c65e301d4c36"
 dependencies = [
  "memchr",
  "minimal-lexical",
-]
-
-[[package]]
-name = "nom-regex"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "72e5c7731c4c1370b61604ed52a2475e861aac9e08dec9f23903d4ddfdc91c18"
-dependencies = [
- "nom 7.1.1",
- "regex",
 ]
 
 [[package]]
@@ -8424,9 +8414,9 @@ dependencies = [
 
 [[package]]
 name = "tracing-subscriber"
-version = "0.3.10"
+version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b9df98b037d039d03400d9dd06b0f8ce05486b5f25e9a2d7d36196e142ebbc52"
+checksum = "4bc28f93baff38037f64e6f43d34cfa1605f27a49c34e8a04c5e78b0babf2596"
 dependencies = [
  "ansi_term",
  "lazy_static",
