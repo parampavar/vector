@@ -1575,9 +1575,9 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "3.1.16"
+version = "3.1.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f52d4f8e4a1419219935762e32913b4430f37cb0c0200ad17a89ee18c0188a9f"
+checksum = "47582c09be7c8b32c0ab3a6181825ababb713fde6fff20fc573a3870dd45c6a0"
 dependencies = [
  "atty",
  "bitflags",
@@ -8590,7 +8590,7 @@ dependencies = [
  "bytesize",
  "chrono",
  "cidr-utils",
- "clap 3.1.16",
+ "clap 3.1.17",
  "codecs",
  "colored",
  "console-subscriber",
@@ -8796,7 +8796,7 @@ dependencies = [
  "async-trait",
  "bytecheck",
  "bytes 1.1.0",
- "clap 3.1.16",
+ "clap 3.1.17",
  "crc32fast",
  "criterion",
  "crossbeam-queue",
@@ -8963,7 +8963,7 @@ dependencies = [
 name = "vrl-cli"
 version = "0.1.0"
 dependencies = [
- "clap 3.1.16",
+ "clap 3.1.17",
  "exitcode",
  "indoc",
  "once_cell",
@@ -9093,7 +9093,7 @@ dependencies = [
  "ansi_term",
  "chrono",
  "chrono-tz",
- "clap 3.1.16",
+ "clap 3.1.17",
  "enrichment",
  "glob",
  "prettydiff",
