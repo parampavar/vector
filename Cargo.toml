@@ -50,6 +50,8 @@ extended-description-file = "target/debian-extended-description.txt"
 
 [package.metadata.deb.systemd-units]
 unit-scripts = "distribution/systemd/"
+enable = false
+start = false
 
 # libc requirements are defined by `cross`
 # https://github.com/rust-embedded/cross#supported-targets
@@ -193,7 +195,7 @@ smpl_jwt = { version = "0.7.0", default-features = false, optional = true }
 
 # API
 async-graphql = { version = "3.0.38", default-features = false, optional = true, features = ["chrono"] }
-async-graphql-warp = { version = "3.0.38", default-features = false, optional = true }
+async-graphql-warp = { version = "4.0.1", default-features = false, optional = true }
 itertools = { version = "0.10.3", default-features = false, optional = true }
 
 # API client
