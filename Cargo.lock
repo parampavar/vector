@@ -1284,7 +1284,7 @@ dependencies = [
  "serde_urlencoded 0.7.1",
  "thiserror",
  "tokio",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "url",
  "webpki 0.22.0",
  "webpki-roots 0.22.3",
@@ -1648,7 +1648,7 @@ dependencies = [
  "smallvec",
  "syslog_loose",
  "tokio",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "tracing 0.1.34",
  "value",
  "vector_common",
@@ -1700,7 +1700,7 @@ dependencies = [
  "memchr",
  "pin-project-lite",
  "tokio",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
 ]
 
 [[package]]
@@ -3146,7 +3146,7 @@ dependencies = [
  "indexmap",
  "slab",
  "tokio",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "tracing 0.1.34",
 ]
 
@@ -3973,7 +3973,7 @@ dependencies = [
  "serde_yaml",
  "thiserror",
  "tokio",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "tower",
  "tower-http 0.2.5",
  "tracing 0.1.34",
@@ -4016,7 +4016,7 @@ dependencies = [
  "smallvec",
  "thiserror",
  "tokio",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "tracing 0.1.34",
 ]
 
@@ -4590,7 +4590,7 @@ dependencies = [
  "thiserror",
  "tokio",
  "tokio-rustls 0.23.3",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "trust-dns-proto",
  "trust-dns-resolver",
  "typed-builder 0.10.0",
@@ -7740,7 +7740,7 @@ dependencies = [
  "postgres-types",
  "socket2",
  "tokio",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
 ]
 
 [[package]]
@@ -7832,9 +7832,9 @@ dependencies = [
 
 [[package]]
 name = "tokio-util"
-version = "0.7.1"
+version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0edfdeb067411dba2044da6d1cb2df793dd35add7888d73c16e3381ded401764"
+checksum = "f988a1a1adc2fb21f9c12aa96441da33a1728193ae0b95d2be22dbd17fcb4e5c"
 dependencies = [
  "bytes 1.1.0",
  "futures-core",
@@ -7882,7 +7882,7 @@ dependencies = [
  "tokio",
  "tokio-rustls 0.23.3",
  "tokio-stream",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "tower",
  "tower-layer",
  "tower-service",
@@ -7917,7 +7917,7 @@ dependencies = [
  "rand 0.8.5",
  "slab",
  "tokio",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "tower-layer",
  "tower-service",
  "tracing 0.1.34",
@@ -8730,7 +8730,7 @@ dependencies = [
  "tokio-stream",
  "tokio-test",
  "tokio-tungstenite 0.17.1",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "toml",
  "tonic",
  "tonic-build",
@@ -8850,7 +8850,7 @@ dependencies = [
  "temp-dir",
  "tokio",
  "tokio-test",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "tracing 0.1.34",
  "tracing-fluent-assertions",
  "tracing-subscriber 0.3.11",
@@ -8941,7 +8941,7 @@ dependencies = [
  "tokio",
  "tokio-stream",
  "tokio-test",
- "tokio-util 0.7.1",
+ "tokio-util 0.7.2",
  "toml",
  "tower",
  "tracing 0.1.34",
