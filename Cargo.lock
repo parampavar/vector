@@ -4212,7 +4212,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "55586aa936c35f34ba8aa5d97356d554311206e1ce1f9e68fe7b07288e5ad827"
 dependencies = [
  "ahash",
- "metrics-macros",
+ "metrics-macros 0.4.1",
+]
+
+[[package]]
+name = "metrics"
+version = "0.20.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "94a70dc6c8179c4e889928dffb92336b821462c7b7613de91304fe80040fec12"
+dependencies = [
+ "ahash",
+ "metrics-macros 0.5.1",
+ "portable-atomic",
 ]
 
 [[package]]
@@ -4229,15 +4240,26 @@ dependencies = [
 ]
 
 [[package]]
-name = "metrics-tracing-context"
-version = "0.9.0"
+name = "metrics-macros"
+version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7927d28bccc322a3f48fc445bffe7cb491ab8a43ea28f7c5f75bc16fc4e5d6bd"
+checksum = "49e30813093f757be5cf21e50389a24dc7dbb22c49f23b7e8f51d69b508a5ffa"
 dependencies = [
- "itoa 0.4.8",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "metrics-tracing-context"
+version = "0.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6097e2772147f332c9aedba572e9cd334b7946e1762d8ae4d05db0faf962542a"
+dependencies = [
+ "itoa 1.0.1",
  "lockfree-object-pool",
- "metrics",
- "metrics-util",
+ "metrics 0.20.0",
+ "metrics-util 0.14.0",
  "once_cell",
  "tracing 0.1.34",
  "tracing-core 0.1.28",
@@ -4251,20 +4273,39 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1174223789e331d9d47a4a953dac36e397db60fa8d2a111ac505388c6c7fe32e"
 dependencies = [
  "ahash",
- "aho-corasick",
  "atomic-shim",
  "crossbeam-epoch",
  "crossbeam-utils",
  "dashmap 4.0.2",
  "hashbrown 0.11.2",
  "indexmap",
- "metrics",
+ "metrics 0.17.1",
  "num_cpus",
  "ordered-float 2.10.0",
  "parking_lot 0.11.2",
- "quanta",
+ "quanta 0.9.3",
+ "sketches-ddsketch 0.1.2",
+]
+
+[[package]]
+name = "metrics-util"
+version = "0.14.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f7d24dc2dbae22bff6f1f9326ffce828c9f07ef9cc1e8002e5279f845432a30a"
+dependencies = [
+ "aho-corasick",
+ "crossbeam-epoch",
+ "crossbeam-utils",
+ "hashbrown 0.12.0",
+ "indexmap",
+ "metrics 0.20.0",
+ "num_cpus",
+ "ordered-float 2.10.0",
+ "parking_lot 0.12.1",
+ "portable-atomic",
+ "quanta 0.10.1",
  "radix_trie",
- "sketches-ddsketch",
+ "sketches-ddsketch 0.2.0",
 ]
 
 [[package]]
@@ -5383,6 +5424,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "portable-atomic"
+version = "0.3.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "763095e04dcbeb889b2ab35296ecb18a20fe16b4e9877ce64aab73d8fd05a8c3"
+
+[[package]]
 name = "portpicker"
 version = "1.0.0"
 dependencies = [
@@ -5722,6 +5769,22 @@ name = "quanta"
 version = "0.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "20afe714292d5e879d8b12740aa223c6a88f118af41870e8b6196e39a02238a8"
+dependencies = [
+ "crossbeam-utils",
+ "libc",
+ "mach",
+ "once_cell",
+ "raw-cpuid",
+ "wasi 0.10.2+wasi-snapshot-preview1",
+ "web-sys",
+ "winapi 0.3.9",
+]
+
+[[package]]
+name = "quanta"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b7e31331286705f455e56cca62e0e717158474ff02b7936c1fa596d983f4ae27"
 dependencies = [
  "crossbeam-utils",
  "libc",
@@ -6896,6 +6959,12 @@ name = "sketches-ddsketch"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "76a77a8fd93886010f05e7ea0720e569d6d16c65329dbe3ec033bbbccccb017b"
+
+[[package]]
+name = "sketches-ddsketch"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ceb945e54128e09c43d8e4f1277851bd5044c6fc540bbaa2ad888f60b3da9ae7"
 
 [[package]]
 name = "slab"
@@ -8379,7 +8448,7 @@ dependencies = [
  "lru",
  "maxminddb",
  "md-5",
- "metrics",
+ "metrics 0.17.1",
  "metrics-tracing-context",
  "mlua",
  "mongodb",
@@ -8525,9 +8594,9 @@ dependencies = [
  "hdrhistogram",
  "leveldb",
  "memmap2",
- "metrics",
+ "metrics 0.17.1",
  "metrics-tracing-context",
- "metrics-util",
+ "metrics-util 0.10.2",
  "num-traits",
  "once_cell",
  "parking_lot 0.12.1",
@@ -8560,7 +8629,7 @@ dependencies = [
  "crossbeam-utils",
  "derivative",
  "futures 0.3.21",
- "metrics",
+ "metrics 0.17.1",
  "nom",
  "ordered-float 3.0.0",
  "pin-project",
@@ -8641,9 +8710,9 @@ dependencies = [
  "hyper-proxy",
  "indexmap",
  "lookup",
- "metrics",
+ "metrics 0.17.1",
  "metrics-tracing-context",
- "metrics-util",
+ "metrics-util 0.10.2",
  "mlua",
  "ndarray",
  "ndarray-stats",
