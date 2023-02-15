@@ -802,7 +802,7 @@ dependencies = [
  "aws-smithy-async",
  "aws-smithy-checksums",
  "aws-smithy-client",
- "aws-smithy-eventstream",
+ "aws-smithy-eventstream 0.53.1",
  "aws-smithy-http 0.53.1",
  "aws-smithy-http-tower 0.53.1",
  "aws-smithy-json",
@@ -910,7 +910,7 @@ checksum = "22af7f6515f8b51dabef87df1d901c9734e4e367791c6d0e1082f9f31528120e"
 dependencies = [
  "aws-credential-types",
  "aws-sigv4",
- "aws-smithy-eventstream",
+ "aws-smithy-eventstream 0.53.1",
  "aws-smithy-http 0.53.1",
  "aws-types",
  "http",
@@ -923,7 +923,7 @@ version = "0.53.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "eee0d796882321e91ca7b991ab6193864e04b605be3a6c18adb9134a90d5a860"
 dependencies = [
- "aws-smithy-eventstream",
+ "aws-smithy-eventstream 0.53.1",
  "aws-smithy-http 0.53.1",
  "bytes 1.4.0",
  "form_urlencoded",
@@ -1005,12 +1005,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "aws-smithy-eventstream"
+version = "0.54.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "652a99272024770cbe33579dc0016914a09922b27f9a4d12f37472aacbbe71c1"
+dependencies = [
+ "aws-smithy-types 0.54.1",
+ "bytes 1.4.0",
+ "crc32fast",
+]
+
+[[package]]
 name = "aws-smithy-http"
 version = "0.53.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "29dcab29afbea7726f5c10c7be0c38666d7eb07db551580b3b26ed7cfb5d1935"
 dependencies = [
- "aws-smithy-eventstream",
+ "aws-smithy-eventstream 0.53.1",
  "aws-smithy-types 0.53.1",
  "bytes 1.4.0",
  "bytes-utils",
@@ -1031,6 +1042,7 @@ version = "0.54.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5bd86f48d7e36fb24ee922d04d79c8353e01724b1c38757ed92593179223aa7"
 dependencies = [
+ "aws-smithy-eventstream 0.54.1",
  "aws-smithy-types 0.54.1",
  "bytes 1.4.0",
  "bytes-utils",
@@ -1116,7 +1128,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "da7e499c4b15bab8eb6b234df31833cc83a1bdaa691ba72d5d81efc109d9d705"
 dependencies = [
  "base64-simd",
- "itoa 1.0.4",
+ "itoa",
  "num-integer",
  "ryu",
  "time",
@@ -9092,7 +9104,7 @@ dependencies = [
  "aws-sigv4",
  "aws-smithy-async",
  "aws-smithy-client",
- "aws-smithy-http 0.53.1",
+ "aws-smithy-http 0.54.1",
  "aws-smithy-http-tower 0.54.1",
  "aws-smithy-types 0.53.1",
  "aws-types",
