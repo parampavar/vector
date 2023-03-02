@@ -4876,9 +4876,9 @@ dependencies = [
 
 [[package]]
 name = "metrics-tracing-context"
-version = "0.12.0"
+version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6097e2772147f332c9aedba572e9cd334b7946e1762d8ae4d05db0faf962542a"
+checksum = "6e5e9349ee6496b953880fad86ad01cf57b323541b59ba293d596126a0063f0b"
 dependencies = [
  "itoa",
  "lockfree-object-pool",
