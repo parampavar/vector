@@ -2591,9 +2591,9 @@ checksum = "8d7439c3735f405729d52c3fbbe4de140eaf938a1fe47d227c27f8254d4302a5"
 
 [[package]]
 name = "db-key"
-version = "0.0.5"
+version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b72465f46d518f6015d9cf07f7f3013a95dd6b9c2747c3d65ae0cce43929d14f"
+checksum = "13d81b1999ae2c0acc98a9a8e0211e1247c11914f363588020bc54383949c479"
 
 [[package]]
 name = "deadpool"
