@@ -2296,7 +2296,7 @@ dependencies = [
  "futures-core",
  "prost 0.12.1",
  "prost-types 0.12.1",
- "tonic 0.10.1",
+ "tonic 0.10.2",
  "tracing-core 0.1.30",
 ]
 
@@ -2318,7 +2318,7 @@ dependencies = [
  "thread_local",
  "tokio",
  "tokio-stream",
- "tonic 0.10.1",
+ "tonic 0.10.2",
  "tracing 0.1.37",
  "tracing-core 0.1.30",
  "tracing-subscriber",
@@ -5152,9 +5152,9 @@ dependencies = [
 
 [[package]]
 name = "memchr"
-version = "2.6.3"
+version = "2.6.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f232d6ef707e1956a43342693d2a31e72989554d58299d7a88738cc95b0d35c"
+checksum = "f665ee40bc4a3c5590afb1e9677db74a508659dfd71e126420da8274909a0167"
 
 [[package]]
 name = "memmap2"
