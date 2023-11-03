@@ -19,7 +19,7 @@ jobs:
 
     # Get the artifacts with the PR number and branch name
     - name: Download artifact
-      uses: actions/github-script@v3.1.0
+      uses: actions/github-script@v6
       with:
         script: |
           const fs = require('fs');
@@ -71,7 +71,7 @@ jobs:
       if: success()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      uses: actions/github-script@v3
+      uses: actions/github-script@v6
       with:
         script: |
           const prInfo = fs.readFileSync('./pr/PR_INFO', 'utf8');
