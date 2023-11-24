@@ -827,7 +827,7 @@ dependencies = [
  "aws-types",
  "bytes 1.5.0",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "lazy_static",
  "percent-encoding",
  "pin-project-lite",
@@ -974,7 +974,7 @@ dependencies = [
  "bytes-utils",
  "fastrand 1.9.0",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "once_cell",
  "percent-encoding",
  "regex",
@@ -1139,7 +1139,7 @@ dependencies = [
  "crc32fast",
  "hex",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "md-5",
  "pin-project-lite",
  "sha1",
@@ -1160,7 +1160,7 @@ dependencies = [
  "bytes 1.5.0",
  "fastrand 1.9.0",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "hyper",
  "hyper-rustls 0.23.2",
  "hyper-tls",
@@ -1193,7 +1193,7 @@ dependencies = [
  "bytes-utils",
  "futures-core",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "hyper",
  "once_cell",
  "percent-encoding",
@@ -1211,7 +1211,7 @@ dependencies = [
  "aws-smithy-types",
  "bytes 1.5.0",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "pin-project-lite",
  "tower",
  "tracing 0.1.40",
@@ -1295,7 +1295,7 @@ dependencies = [
  "bytes 1.5.0",
  "futures-util",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "hyper",
  "itoa",
  "matchit",
@@ -1322,7 +1322,7 @@ dependencies = [
  "bytes 1.5.0",
  "futures-util",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "mime",
  "rustversion",
  "tower-layer",
@@ -4181,6 +4181,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "http-body"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1cac85db508abc24a2e48553ba12a996e87244a0395ce011e62b37158745d643"
+dependencies = [
+ "bytes 1.5.0",
+ "http 1.0.0",
+]
+
+[[package]]
 name = "http-range-header"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4247,7 +4257,7 @@ dependencies = [
  "futures-util",
  "h2 0.3.22",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "httparse",
  "httpdate",
  "itoa",
@@ -4794,7 +4804,7 @@ dependencies = [
  "either",
  "futures 0.3.29",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "hyper",
  "hyper-openssl",
  "hyper-timeout",
@@ -7471,7 +7481,7 @@ dependencies = [
  "futures-util",
  "h2 0.3.22",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "hyper",
  "hyper-rustls 0.24.2",
  "hyper-tls",
@@ -9259,7 +9269,7 @@ dependencies = [
  "futures-util",
  "h2 0.3.22",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "hyper",
  "hyper-timeout",
  "percent-encoding",
@@ -9289,7 +9299,7 @@ dependencies = [
  "flate2",
  "h2 0.3.22",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "hyper",
  "hyper-timeout",
  "percent-encoding",
@@ -9366,7 +9376,7 @@ dependencies = [
  "futures-core",
  "futures-util",
  "http 0.2.9",
- "http-body",
+ "http-body 0.4.5",
  "http-range-header",
  "mime",
  "pin-project-lite",
@@ -10012,7 +10022,7 @@ dependencies = [
  "hickory-proto",
  "hostname",
  "http 0.2.9",
- "http-body",
+ "http-body 1.0.0",
  "http-serde",
  "hyper",
  "hyper-openssl",
