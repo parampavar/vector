@@ -5266,6 +5266,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "metrics"
+version = "0.22.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cd71d9db2e4287c3407fa04378b8c2ee570aebe0854431562cdd89ca091854f4"
+dependencies = [
+ "ahash 0.8.6",
+ "portable-atomic",
+]
+
+[[package]]
 name = "metrics-macros"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5284,7 +5294,7 @@ checksum = "8fec95d1490f2b7e2d49462f9d75aa4fed52cc21e0b40aefc5987c6f404d40a2"
 dependencies = [
  "itoa",
  "lockfree-object-pool",
- "metrics",
+ "metrics 0.21.1",
  "metrics-util",
  "once_cell",
  "tracing 0.1.40",
@@ -5303,7 +5313,7 @@ dependencies = [
  "crossbeam-utils",
  "hashbrown 0.13.1",
  "indexmap 1.9.3",
- "metrics",
+ "metrics 0.21.1",
  "num_cpus",
  "ordered-float 3.9.2",
  "quanta 0.11.1",
@@ -10096,7 +10106,7 @@ dependencies = [
  "lru",
  "maxminddb",
  "md-5",
- "metrics",
+ "metrics 0.22.1",
  "metrics-tracing-context",
  "mlua",
  "mongodb",
@@ -10228,7 +10238,7 @@ dependencies = [
  "futures 0.3.30",
  "hdrhistogram",
  "memmap2",
- "metrics",
+ "metrics 0.22.1",
  "metrics-tracing-context",
  "metrics-util",
  "num-traits",
@@ -10267,7 +10277,7 @@ dependencies = [
  "derivative",
  "futures 0.3.30",
  "indexmap 2.2.5",
- "metrics",
+ "metrics 0.22.1",
  "nom",
  "ordered-float 4.2.0",
  "paste",
@@ -10369,7 +10379,7 @@ dependencies = [
  "hyper-proxy",
  "indexmap 2.2.5",
  "ipnet",
- "metrics",
+ "metrics 0.22.1",
  "metrics-tracing-context",
  "metrics-util",
  "mlua",
