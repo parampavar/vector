@@ -43,7 +43,7 @@ proptest = { version = "1.5", optional = true }
 prost-types.workspace = true
 prost .workspace = true
 quanta = { version = "0.12.3", default-features = false }
-regex = { version = "1.11.0", default-features = false, features = ["std", "perf"] }
+regex = { version = "1.11.1", default-features = false, features = ["std", "perf"] }
 ryu = { version = "1", default-features = false }
 serde.workspace = true
 serde_json.workspace = true
@@ -51,7 +51,7 @@ serde_with = { version = "3.11.0", default-features = false, features = ["std", 
 smallvec = { version = "1", default-features = false, features = ["serde", "const_generics"] }
 snafu = { version = "0.7.5", default-features = false }
 socket2 = { version = "0.5.7", default-features = false }
-tokio = { version = "1.41.0", default-features = false, features = ["net"] }
+tokio = { version = "1.41.1", default-features = false, features = ["net"] }
 tokio-openssl = { version = "0.6.5", default-features = false }
 tokio-stream = { version = "0.1", default-features = false, features = ["time"], optional = true }
 tokio-util = { version = "0.7.0", default-features = false, features = ["time"] }
