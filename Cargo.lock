@@ -2231,7 +2231,7 @@ dependencies = [
  "influxdb-line-protocol",
  "memchr",
  "ordered-float 4.5.0",
- "prost 0.12.6",
+ "prost 0.13.3",
  "prost-reflect",
  "rand 0.8.5",
  "regex",
@@ -5543,9 +5543,9 @@ version = "0.1.0"
 dependencies = [
  "bytes 1.9.0",
  "chrono",
- "prost 0.12.6",
+ "prost 0.13.3",
  "prost-build 0.12.6",
- "prost-types 0.12.6",
+ "prost-types 0.13.3",
  "snap",
 ]
 
@@ -6619,7 +6619,7 @@ dependencies = [
  "chrono",
  "hex",
  "ordered-float 4.5.0",
- "prost 0.12.6",
+ "prost 0.13.3",
  "prost-build 0.12.6",
  "tonic 0.11.0",
  "tonic-build 0.11.0",
@@ -7360,9 +7360,9 @@ dependencies = [
  "indexmap 2.7.0",
  "nom",
  "num_enum 0.7.3",
- "prost 0.12.6",
+ "prost 0.13.3",
  "prost-build 0.12.6",
- "prost-types 0.12.6",
+ "prost-types 0.13.3",
  "snafu 0.7.5",
  "vector-common",
 ]
@@ -7458,7 +7458,7 @@ checksum = "22505a5c94da8e3b7c2996394d1c933236c4d743e81a410bcca4e6989fc066a4"
 dependencies = [
  "bytes 1.9.0",
  "heck 0.5.0",
- "itertools 0.12.1",
+ "itertools 0.11.0",
  "log",
  "multimap",
  "once_cell",
@@ -7491,7 +7491,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "81bddcdb20abf9501610992b6759a4c888aef7d1a7247ef75e2404275ac24af1"
 dependencies = [
  "anyhow",
- "itertools 0.12.1",
+ "itertools 0.11.0",
  "proc-macro2 1.0.92",
  "quote 1.0.37",
  "syn 2.0.90",
@@ -7512,9 +7512,9 @@ dependencies = [
 
 [[package]]
 name = "prost-reflect"
-version = "0.14.2"
+version = "0.14.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4b7535b02f0e5efe3e1dbfcb428be152226ed0c66cad9541f2274c8ba8d4cd40"
+checksum = "20ae544fca2892fd4b7e9ff26cba1090cedf1d4d95c2aded1af15d2f93f270b8"
 dependencies = [
  "base64 0.22.1",
  "once_cell",
@@ -10888,10 +10888,10 @@ dependencies = [
  "postgres-openssl",
  "proptest",
  "proptest-derive",
- "prost 0.12.6",
+ "prost 0.13.3",
  "prost-build 0.12.6",
  "prost-reflect",
- "prost-types 0.12.6",
+ "prost-types 0.13.3",
  "pulsar",
  "quickcheck",
  "rand 0.8.5",
@@ -11155,9 +11155,9 @@ dependencies = [
  "parking_lot",
  "pin-project",
  "proptest",
- "prost 0.12.6",
+ "prost 0.13.3",
  "prost-build 0.12.6",
- "prost-types 0.12.6",
+ "prost-types 0.13.3",
  "quanta",
  "quickcheck",
  "quickcheck_macros",
