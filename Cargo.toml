@@ -225,8 +225,8 @@ metrics.workspace = true
 metrics-tracing-context.workspace = true
 
 # AWS - Official SDK
-aws-runtime = { version = "1.5.6", optional = true }
-aws-config = { version = "1.6.1", default-features = false, features = ["behavior-version-latest", "credentials-process", "sso", "rt-tokio"], optional = true }
+aws-runtime = { version = "1.5.7", optional = true }
+aws-config = { version = "1.6.2", default-features = false, features = ["behavior-version-latest", "credentials-process", "sso", "rt-tokio"], optional = true }
 aws-credential-types = { version = "1.2.3", default-features = false, features = ["hardcoded-credentials"], optional = true }
 aws-sdk-cloudwatch = { version = "1.70.0", default-features = false, features = ["behavior-version-latest", "rt-tokio"], optional = true }
 aws-sdk-cloudwatchlogs = { version = "1.76.0", default-features = false, features = ["behavior-version-latest", "rt-tokio"], optional = true }
@@ -394,7 +394,7 @@ thread_local = { version = "1.1.8", default-features = false, optional = true }
 typetag = { version = "0.2.20", default-features = false }
 url = { version = "2.5.4", default-features = false, features = ["serde"] }
 warp = { version = "0.3.7", default-features = false }
-zstd = { version = "0.13.0", default-features = false }
+zstd = { version = "0.13.3", default-features = false }
 arr_macro = { version = "0.2.1" }
 
 # depending on fork for bumped nix dependency
@@ -450,7 +450,7 @@ vector-lib = { workspace = true, features = ["test"] }
 vrl.workspace = true
 
 wiremock = "0.6.3"
-zstd = { version = "0.13.0", default-features = false }
+zstd = { version = "0.13.3", default-features = false }
 
 [patch.crates-io]
 # The upgrade for `tokio-util` >= 0.6.9 is blocked on https://github.com/vectordotdev/vector/issues/11257.
