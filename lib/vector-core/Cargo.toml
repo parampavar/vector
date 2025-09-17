@@ -70,7 +70,7 @@ cfg-if.workspace = true
 security-framework = "3.3.0"
 
 [target.'cfg(windows)'.dependencies]
-schannel = "0.1.27"
+schannel = "0.1.28"
 
 [build-dependencies]
 prost-build.workspace = true
