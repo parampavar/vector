@@ -2550,7 +2550,7 @@ dependencies = [
  "similar-asserts",
  "smallvec",
  "snafu 0.8.9",
- "strum 0.26.3",
+ "strum 0.27.2",
  "syslog_loose 0.23.0",
  "tokio",
  "tokio-util",
