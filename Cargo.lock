@@ -12757,7 +12757,7 @@ dependencies = [
  "arc-swap",
  "arr_macro",
  "arrow 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 58.1.0",
  "assert_cmd",
  "async-compression",
  "async-nats",
