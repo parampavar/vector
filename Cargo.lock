@@ -323,7 +323,7 @@ dependencies = [
  "arrow-json 56.2.0",
  "arrow-ord 56.2.0",
  "arrow-row 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "arrow-select 56.2.0",
  "arrow-string 56.2.0",
 ]
@@ -358,7 +358,7 @@ dependencies = [
  "arrow-array 56.2.0",
  "arrow-buffer 56.2.0",
  "arrow-data 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "chrono",
  "num",
 ]
@@ -386,7 +386,7 @@ dependencies = [
  "ahash 0.8.11",
  "arrow-buffer 56.2.0",
  "arrow-data 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "chrono",
  "chrono-tz",
  "half",
@@ -445,7 +445,7 @@ dependencies = [
  "arrow-array 56.2.0",
  "arrow-buffer 56.2.0",
  "arrow-data 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "arrow-select 56.2.0",
  "atoi",
  "base64 0.22.1",
@@ -500,7 +500,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a5c64fff1d142f833d78897a772f2e5b55b36cb3e6320376f0961ab0db7bd6d0"
 dependencies = [
  "arrow-buffer 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "half",
  "num",
 ]
@@ -547,7 +547,7 @@ dependencies = [
  "arrow-array 56.2.0",
  "arrow-buffer 56.2.0",
  "arrow-data 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "arrow-select 56.2.0",
  "flatbuffers 25.9.23",
 ]
@@ -578,7 +578,7 @@ dependencies = [
  "arrow-buffer 56.2.0",
  "arrow-cast 56.2.0",
  "arrow-data 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "chrono",
  "half",
  "indexmap 2.12.0",
@@ -623,7 +623,7 @@ dependencies = [
  "arrow-array 56.2.0",
  "arrow-buffer 56.2.0",
  "arrow-data 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "arrow-select 56.2.0",
 ]
 
@@ -649,7 +649,7 @@ dependencies = [
  "arrow-array 56.2.0",
  "arrow-buffer 56.2.0",
  "arrow-data 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "half",
 ]
 
@@ -668,9 +668,9 @@ dependencies = [
 
 [[package]]
 name = "arrow-schema"
-version = "56.2.0"
+version = "56.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b3aa9e59c611ebc291c28582077ef25c97f1975383f1479b12f3b9ffee2ffabe"
+checksum = "5a0d5eb3fe25337ff83e8333a08379bdd1540b0961b1c888f6e505d971c198e1"
 
 [[package]]
 name = "arrow-schema"
@@ -692,7 +692,7 @@ dependencies = [
  "arrow-array 56.2.0",
  "arrow-buffer 56.2.0",
  "arrow-data 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "num",
 ]
 
@@ -719,7 +719,7 @@ dependencies = [
  "arrow-array 56.2.0",
  "arrow-buffer 56.2.0",
  "arrow-data 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "arrow-select 56.2.0",
  "memchr",
  "num",
@@ -7962,7 +7962,7 @@ dependencies = [
  "arrow-cast 56.2.0",
  "arrow-data 56.2.0",
  "arrow-ipc 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 56.2.1",
  "arrow-select 56.2.0",
  "base64 0.22.1",
  "bytes",
@@ -12878,7 +12878,7 @@ dependencies = [
  "arc-swap",
  "arr_macro",
  "arrow 56.2.0",
- "arrow-schema 56.2.0",
+ "arrow-schema 58.1.0",
  "assert_cmd",
  "async-compression",
  "async-nats",
