@@ -507,7 +507,7 @@ jobs:
         with:
           vdev: true
       - name: Configure credentials for COSE release artifacts
-        uses: aws-actions/configure-aws-credentials@8df5847569e6427dd6c4fb1cf565c83acfa8afa7 # v6.0.0
+        uses: aws-actions/configure-aws-credentials@cbe3b392738ccf3f987d68400dafcf4b0624a56c # v6.2.4
         with:
           role-to-assume: arn:aws:iam::486234852809:role/vector-release-publisher-github-actions
           aws-region: us-east-1
