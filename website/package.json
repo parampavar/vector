@@ -10,9 +10,9 @@
     "@algolia/autocomplete-js": "^1.19.10",
     "@algolia/autocomplete-theme-classic": "^1.19.10",
     "@alpinejs/persist": "^3.17.3",
-    "@babel/cli": "^8.0.5",
-    "@babel/core": "^8.0.5",
-    "@babel/preset-env": "^8.0.5",
+    "@babel/cli": "^8.0.6",
+    "@babel/core": "^8.0.6",
+    "@babel/preset-env": "^8.0.6",
     "@babel/preset-react": "^8.0.0",
     "@babel/preset-typescript": "^8.0.0",
     "@babel/runtime": "^8.0.5",
@@ -22,7 +22,7 @@
     "@tailwindcss/postcss": "^4.2.4",
     "@tailwindcss/typography": "^0.5.16",
     "@types/lodash.chunk": "^4.2.6",
-    "@types/node": "^26.5.1",
+    "@types/node": "^26.6.1",
     "@types/topojson-specification": "^1.0.1",
     "alpinejs": "^3.17.3",
     "classnames": "^2.3.1",
@@ -49,7 +49,7 @@
     "chokidar-cli": "^3.0.0",
     "concurrently": "^10.0.5",
     "pagefind": "1.5.2",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.8",
     "prettier-plugin-go-template": "^0.0.15"
   }
 }
